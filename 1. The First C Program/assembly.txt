@@ -1,0 +1,22 @@
+1main:
+(__TEXT,__text) section
+_main:
+0000000100000460	sub	sp, sp, #0x20
+0000000100000464	stp	x29, x30, [sp, #0x10]
+0000000100000468	add	x29, sp, #0x10
+000000010000046c	mov	w8, #0x0
+0000000100000470	str	w8, [sp, #0x8]
+0000000100000474	stur	wzr, [x29, #-0x4]
+0000000100000478	adrp	x0, 0 ; 0x100000000
+000000010000047c	add	x0, x0, #0x4b8 ; literal pool for: "This is my first C code. "
+0000000100000480	bl	0x1000004ac ; symbol stub for: _printf
+0000000100000484	adrp	x0, 0 ; 0x100000000
+0000000100000488	add	x0, x0, #0x4d2 ; literal pool for: "This is cool programming language.\n"
+000000010000048c	bl	0x1000004ac ; symbol stub for: _printf
+0000000100000490	adrp	x0, 0 ; 0x100000000
+0000000100000494	add	x0, x0, #0x4f6 ; literal pool for: "This statement starts from a new line."
+0000000100000498	bl	0x1000004ac ; symbol stub for: _printf
+000000010000049c	ldr	w0, [sp, #0x8]
+00000001000004a0	ldp	x29, x30, [sp, #0x10]
+00000001000004a4	add	sp, sp, #0x20
+00000001000004a8	ret
