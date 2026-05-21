@@ -5,7 +5,7 @@ int main() {
 
     printf("Code compiled on: %s at %s\n", __DATE__, __TIME__);
 
-    // Mad Libs Game
+    // Madlibs Game
     char noun[50] = "";
     char verb[50] = "";
     char adjective1[50] = "";
