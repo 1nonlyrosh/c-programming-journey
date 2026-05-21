@@ -9,3 +9,5 @@ This repository contains my C programming practice files, notes, and mini projec
 - Arithmetic operations
 - User input
 - Shopping cart program
+- Madlibs program
+- Basic math functions
