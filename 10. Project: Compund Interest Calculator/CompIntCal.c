@@ -32,7 +32,7 @@ int main() {
     printf("Enter the number of times compunded per year: ");
     scanf("%d", &timesCompunded);
 
-    // Returna calculations
+    // Returns calculations
     totalReturn = principal * pow((1 + (interestRate / timesCompunded)), (timesCompunded * time));
     printf("Hence, your returns after compunding is: %.2lf INR\n", totalReturn);
 
